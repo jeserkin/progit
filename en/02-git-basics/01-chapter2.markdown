@@ -793,12 +793,16 @@ If you want to see more information about a particular remote, you can use the `
 
 	$ git remote show origin
 	* remote origin
-	  URL: git://github.com/schacon/ticgit.git
-	  Remote branch merged with 'git pull' while on branch master
-	    master
-	  Tracked remote branches
-	    master
-	    ticgit
+	  Fetch URL: git://github.com/schacon/ticgit.git
+	  Push  URL: git://github.com/schacon/ticgit.git
+	  HEAD branch: master
+	  Remote branches:
+	    master tracked
+	    ticgit tracked
+	  Local branch configured for 'git pull':
+	    master merges with remote master
+	  Local ref configured for 'git push':
+	    master pushes to master (up to date)
 
 It lists the URL for the remote repository as well as the tracking branch information. The command helpfully tells you that if you’re on the master branch and you run `git pull`, it will automatically merge in the master branch on the remote after it fetches all the remote references. It also lists all the remote references it has pulled down.
 
